@@ -1,10 +1,723 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="me.planetguy.notspacechem.MainActivity"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    tools:context="me.planetguy.notspacechem.MainActivity">
 
-    />
+    <!-- ============= Row 0 ==================== -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_06"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_07"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_08"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_09"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 1 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_18"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_19"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 2 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_26"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_27"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_28"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_29"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 3 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_35"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_36"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_37"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_38"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_39"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 4 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_41"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_42"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_43"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_44"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_45"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_46"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_47"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_48"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_49"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 5 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_51"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_52"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_53"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_54"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_55"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_56"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_57"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_58"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_59"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 6 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_60"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_61"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_62"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_63"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_64"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_65"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_66"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_67"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_68"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_69"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- ============= Row 7 ==================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/grid_70"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_71"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_72"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_73"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_74"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_76"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_77"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_78"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/grid_79"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_grid_bg"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
