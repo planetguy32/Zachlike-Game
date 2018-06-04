@@ -2,15 +2,19 @@ package me.planetguy.notspacechem;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener{
 
     private Button[][] grid = new Button[8][10];
-    LinearLayout myLayout;
+    private LinearLayout myLayout = null;
+    float x1, x2, y1, y2, dx, dy;
+    String direction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +31,51 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 String gridID = "grid_" + i + j;
                 int resID = getResources().getIdentifier(gridID, "id", getPackageName());
                 grid[i][j] = findViewById(resID);
-                grid[i][j].setOnClickListener(this);
+                //grid[i][j].setOnClickListener(this);
+                grid[i][j].setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                        if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
+                            x1 = motionEvent.getX();
+                            y1 = motionEvent.getY();
+                        } else if(motionEvent.getAction() == MotionEvent.ACTION_MOVE) {
+                            x2 = motionEvent.getX();
+                            y2 = motionEvent.getY();
+                            dx = x2-x1;
+                            dy = y2-y1;
+                        }
+
+                        if(Math.abs(dx) > Math.abs(dy)) {
+                            if(dx>0){
+                                direction = "right";
+                                Log.d("CHECK_D", direction);
+                                ((Button) view).setText(">");
+                            }
+                            else{
+                                direction = "left";
+                                Log.d("CHECK_D", direction);
+                                ((Button) view).setText("<");
+                            }
+                        } else {
+                            if(dy>0){
+                                direction = "down";
+                                Log.d("CHECK_D", direction);
+                                ((Button) view).setText("v");
+                            }
+                            else{
+                                direction = "up";
+                                Log.d("CHECK_D", direction);
+                                ((Button) view).setText("^");
+                            }
+
+                        }
+
+                        return true;
+                    }
+                });
             }
         }
-
-        myLayout.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                return true;
-            }
-        });
     }
 
     @Override
