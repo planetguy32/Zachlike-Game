@@ -20,7 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -36,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -68,7 +68,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -76,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -84,7 +84,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -92,7 +92,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -109,7 +109,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -117,7 +117,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -125,7 +125,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -133,7 +133,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -157,7 +157,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -165,7 +165,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -173,7 +173,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -181,7 +181,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -198,7 +198,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -206,7 +206,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -214,7 +214,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -222,7 +222,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -246,7 +246,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -254,7 +254,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -262,7 +262,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -270,7 +270,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -287,7 +287,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -295,7 +295,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -303,7 +303,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -311,7 +311,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -335,7 +335,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -343,7 +343,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -351,7 +351,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -359,7 +359,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -376,7 +376,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -384,7 +384,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -392,7 +392,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -400,7 +400,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -424,7 +424,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -432,7 +432,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -440,7 +440,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -448,7 +448,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -465,7 +465,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -473,7 +473,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -481,7 +481,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -489,7 +489,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -513,7 +513,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -521,7 +521,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -529,7 +529,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -537,7 +537,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -554,7 +554,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -562,7 +562,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -570,7 +570,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -578,7 +578,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -602,7 +602,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -610,7 +610,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -618,7 +618,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -626,7 +626,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -643,7 +643,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -651,7 +651,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -659,7 +659,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -667,7 +667,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/outputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -691,7 +691,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -699,7 +699,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -707,7 +707,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
         <Button
@@ -715,7 +715,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/my_grid_bg"
+            android:background="@drawable/inputs_bg"
             android:textSize="20sp" />
 
     </LinearLayout>
