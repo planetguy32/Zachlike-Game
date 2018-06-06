@@ -6,16 +6,15 @@ import java.util.List;
 import java.util.Set;
 
 public class Molecule {
-	
-	private class AtomGraphNode {
+
+	private class Vertex {
 		Point relativeLocation; //relative to the center of this Molecule, at (0,0,0)
 		final Atom part;
-		List<AtomGraphNode> connections=new ArrayList<>();
-		public AtomGraphNode(int x, int y, Atom part){
+		public Vertex(int x, int y, Atom part){
 			this.part=part;
 			this.relativeLocation=new Point(x,y);
 		}
-		public AtomGraphNode(AtomGraphNode o){
+		public Vertex(Vertex o){
 			this.part=o.part;
 			this.relativeLocation=o.relativeLocation;
 		}
@@ -23,28 +22,32 @@ public class Molecule {
 			return relativeLocation.hashCode() ^ part.hashCode();
 		}
 	}
-	
-	private WalkerSnapshot holder=null;
 
-	private List<AtomGraphNode> components=new ArrayList<AtomGraphNode>();
-	
-	public Molecule(){}
-	
-	public Molecule(Molecule base){
-		this.components=new ArrayList<AtomGraphNode>(base.components.size());
-		for(AtomGraphNode part:base.components){
-			components.add(new AtomGraphNode(part));
+	private class Edge {
+		private Vertex v1;
+		private Vertex v2;
+		public Edge(Vertex v1, Vertex v2){
+
 		}
 	}
 	
-	public void attach(int newX, int newY, Atom part){
-		AtomGraphNode a=new AtomGraphNode(newX, newY, part);
-		components.add(a);
+	private WalkerSnapshot holder=null;
+
+	private List<Vertex> components=new ArrayList<Vertex>();
+	private List<Edge> edges=new ArrayList<Edge>();
+
+	public Molecule(){}
+	
+	public Molecule(Molecule base){
+		this.components=new ArrayList<Vertex>(base.components.size());
+		for(Vertex part:base.components){
+			components.add(new Vertex(part));
+		}
 	}
 	
 	public Set<Point> getOccupiedPoints(Point center){
 		HashSet<Point> points=new HashSet<>();
-		for(AtomGraphNode p:components){
+		for(Vertex p:components){
 			points.add(center.add(p.relativeLocation));
 		}
 		return points;
