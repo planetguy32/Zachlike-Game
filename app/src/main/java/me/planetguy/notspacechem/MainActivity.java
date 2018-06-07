@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.MenuInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener{
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                             // Single Tap - cancel out what you have drawn
                             Log.d("CHECK_D", "cancel");
                             ((Button) view).setText(" ");
+                            showMenu( view);
 
                         } else {
                             if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
@@ -126,5 +129,15 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         public boolean onSingleTapUp(MotionEvent event) {
             return true;
         }
+    }
+
+    public void showMenu(View v)
+    {
+        PopupMenu popup = new PopupMenu(this,v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.button_menu, popup.getMenu());
+        hideNavigationBar();
+        popup.show();
+
     }
 }
