@@ -11,8 +11,7 @@ public class SimStep {
 
     public final Board board;
     private final int tick;
-
-    private List<WalkerSnapshot> walkers=new ArrayList<>();
+    public BoardSnapshot snapshot;
 
 
     public SimStep(Board board, int tick){
@@ -23,27 +22,16 @@ public class SimStep {
     private SimStep(Board board) {
         this.tick=0;
         this.board = board;
-        for(int walkerIndex=0; walkerIndex<board.WALKER_COUNT; walkerIndex++){
-            nextWalker:
-            for(int x=0; x<board.symbols.length; x++) {
-                for (int y = 0; y < board.symbols[0].length; y++) {
-                    if (board.symbols[x][y][walkerIndex] == Symbol.START){
-                        walkers.add(new WalkerSnapshot(x,y));
-                        continue nextWalker;
+        this.snapshot=new BoardSnapshot(board);
+        for(int x=0; x<board.symbols.length; x++){
+            for(int y=0; y<board.symbols[x].length; y++){
+                for(int color=0; color<board.symbols[x][y].length; color++){
+                    if(board.symbols[x][y][color] == Symbol.START){
+                        snapshot.walkerPos[color]=new Point(x, y);
                     }
                 }
             }
         }
-    }
-
-    public SimStep advance(SimStep lastStep){
-        SimStep result=new SimStep(this.board, this.tick+1);
-        result.walkers.clear();
-        for(WalkerSnapshot snapshot:walkers){
-            //TODO move the walkers
-            //TODO check collisions
-        }
-        return result;
     }
 
 }

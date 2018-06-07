@@ -10,9 +10,9 @@ public enum Atom {
 
 
     public final int number;
-    public final int bonds;
+    public final int maxBondCount;
     Atom(int number, int bonds) {
         this.number=number;
-        this.bonds=bonds;
+        this.maxBondCount =bonds;
     }
 }

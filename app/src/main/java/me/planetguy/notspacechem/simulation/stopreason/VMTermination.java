@@ -1,4 +1,4 @@
-package me.planetguy.notspacechem.simulation;
+package me.planetguy.notspacechem.simulation.stopreason;
 
 public class VMTermination extends RuntimeException {
 

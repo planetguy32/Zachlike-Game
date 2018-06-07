@@ -10,6 +10,8 @@ public enum Symbol {
     OUT,
     GRAB,
     DROP,
+    BOND,
+    UNBOND,
 
 
 }

@@ -23,6 +23,15 @@ public class Point {
 	public Point subtract(Point p){
 		return new Point(x-p.x, y-p.y);
 	}
+
+	public Direction getDirectionToAdjacent(Point p2){
+		for(Direction d:Direction.values()){
+			if(subtract(p2).equals(d.vector))
+				return d;
+		}
+		return null;
+	}
+
 	public int hashCode(){
 		return x*y ^ (x*x) ^ (y*13);
 	}
@@ -41,6 +50,10 @@ public class Point {
 	}
 	public Point addY(int y){
 		return new Point(x,this.y+y);
+	}
+
+	public boolean isWithin(int mx, int xx, int my, int xy) {
+		return x >= mx && x < xx && y >= my && y < xy;
 	}
 
 	public String toString(){
