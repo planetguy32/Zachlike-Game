@@ -1,15 +1,23 @@
 package me.planetguy.notspacechem;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener{
@@ -46,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                             // Single Tap - cancel out what you have drawn
                             Log.d("CHECK_D", "cancel");
                             ((Button) view).setText(" ");
+                            showMenu( view);
 
                         } else {
                             if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
@@ -127,4 +136,22 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             return true;
         }
     }
+
+    public void showMenu(View v)
+    {
+            PopupMenu popup = new PopupMenu(this,v);
+            popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    Toast.makeText(MainActivity.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                    return true;
+                }
+            });
+            MenuInflater inflater = popup.getMenuInflater();
+            inflater.inflate(R.menu.button_menu, popup.getMenu());
+            hideNavigationBar();
+            popup.show();
+
+    }
+
 }
