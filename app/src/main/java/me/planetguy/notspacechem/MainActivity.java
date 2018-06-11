@@ -447,6 +447,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         return false;
                     board.symbols[tag.x()][tag.y()][channel] = null;
                     board.arrows[tag.x()][tag.y()][channel] = null;
+                } else if(item.getTitle().equals("Main Menu")) {
+                    finish();
                 }
                 redraw();
                 return true;
