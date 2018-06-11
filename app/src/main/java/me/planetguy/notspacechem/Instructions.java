@@ -1,8 +1,10 @@
 package me.planetguy.notspacechem;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
 public class Instructions extends AppCompatActivity {
 
@@ -16,6 +18,17 @@ public class Instructions extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         hideNavigationBar();
+
+        Button b = findViewById(R.id.button5);
+
+        b.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Instructions.this, MainMenu.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+            }
+        });
     }
 
     private void hideNavigationBar(){

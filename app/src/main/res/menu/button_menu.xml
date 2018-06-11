@@ -41,9 +41,4 @@
         android:orderInCategory="100"
         android:title="Remove"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/i9"
-        android:orderInCategory="100"
-        android:title="Main Menu"
-        app:showAsAction="never" />
 </menu>

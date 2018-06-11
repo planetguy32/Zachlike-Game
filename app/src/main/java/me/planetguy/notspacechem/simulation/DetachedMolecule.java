@@ -25,9 +25,7 @@ public class DetachedMolecule {
 
     public boolean equals(DetachedMolecule m){
         //TODO actually check equality
-        //This will be tricky - graph equality is worse than polynomial time
-        //Maybe some optimizations could be done - eg don't consider cases that pair different
-        //   atoms with each other?
+        //This'll probably be O(ouch) - no polynomial solution is known.
         return true;
     }
 }

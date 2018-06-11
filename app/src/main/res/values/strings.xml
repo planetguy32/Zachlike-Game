@@ -2,8 +2,10 @@
     <string name="app_name">Chemplexity</string>
     <string name="startButton">START</string>
     <string name="instructions">How to play</string>
-    <string name="textOne">Move your fingers between two arrows to draw an arrow between two buttons</string>
-    <string name="textTwo">Long press a button to place or remove a symbol</string>
+    <string name="textTwo">Tap a button to place or remove one of the following symbols:</string>
     <string name="titleOne">Chem</string>
     <string name="titleTwo">plexity</string>
+    <string name="backButton">BACK</string>
+    <string name="instructionsTitle">Instructions:</string>
+    <string name="startInstruct">The \"Start\" instruction is where your walkers will start.</string>
 </resources>

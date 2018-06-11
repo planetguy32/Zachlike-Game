@@ -32,7 +32,6 @@ public class Points {
         t1.put(p1, "foo");
         assertEquals(t1.get(p1), "foo");
         assertEquals(t1.get(p2), null);
-        assertNotEquals(p1, p2);
     }
 
 }
