@@ -409,7 +409,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
                 Log.d("combine", tag + "");
 
-
                 if (item.getTitle().equals("Start")) {
                     int channel;
                     if (currentDisplayMode == DisplayMode.RED)
