@@ -142,8 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     }
 
-    public void showMenu(final View v, final Button b)
-    {
+    public void showMenu(final View v, final Button b) {
             final PopupMenu popup = new PopupMenu(this,v);
             popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                 @Override
@@ -165,6 +164,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         b.setText("Unbond");
                     } else if(item.getTitle().equals("Remove")){
                         b.setText(" ");
+                    } else if(item.getTitle().equals("Main Menu")){
+                        finish();
                     }
                     return true;
                 }
