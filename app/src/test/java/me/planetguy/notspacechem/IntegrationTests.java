@@ -61,11 +61,16 @@ public class IntegrationTests {
         board.details[3][0][1]=2;
 
         BoardSnapshot state=new BoardSnapshot(board);
+        int cycles=0;
         try{
-            while(true)
+            while(true) {
                 state.step();
+                cycles++;
+                System.out.println(state);
+                System.out.println();
+            }
         }catch(Completion t){
-            return;
+            System.out.println(cycles);
         }
     }
 }

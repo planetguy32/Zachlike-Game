@@ -25,6 +25,9 @@ public class Board {
         for(int i=0; i<bonders.length; i++){
             bonders[i]=new Point(i, i%2);
         }
+        for(int i=0; i<WALKER_COUNT; i++){
+            symbols[0][0][i]=Symbol.START;
+        }
     }
 
 }
