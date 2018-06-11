@@ -1,5 +1,7 @@
 package me.planetguy.notspacechem.simulation;
 
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,6 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import me.planetguy.notspacechem.MainActivity;
 import me.planetguy.notspacechem.simulation.stopreason.Collision;
 import me.planetguy.notspacechem.simulation.stopreason.Completion;
 import me.planetguy.notspacechem.simulation.stopreason.OutOfBounds;
@@ -28,6 +31,8 @@ public class BoardSnapshot {
 
     public HashMap<Point,Atom> atoms=new HashMap<>();
     public List<Bond> bonds=new ArrayList<>();
+
+    public int cycles=0;
 
     private final Board board;
 
@@ -167,6 +172,8 @@ public class BoardSnapshot {
     }
 
     public void step(int walker){
+        cycles++;
+
         Point origin=walkerPos[walker];
 
         //Change direction
@@ -183,7 +190,8 @@ public class BoardSnapshot {
         if(sym!=null)
             switch(board.symbols[origin.x][origin.y][walker]){
                 case IN:
-                    addMolecule(base, board.puzzle.inputs[detail]);
+                    if(board.puzzle.inputs[detail] != null)
+                        addMolecule(base, board.puzzle.inputs[detail]);
                     break;
                 case OUT:
                     //If we're carrying, don't do anything.

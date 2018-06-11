@@ -11,4 +11,8 @@ public class Bond {
         this.p1 = p1;
         this.p2 = p2;
     }
+
+    public Bond(int i, int i1, int i2, int i3) {
+        this(new Point(i, i1), new Point(i2, i3));
+    }
 }
