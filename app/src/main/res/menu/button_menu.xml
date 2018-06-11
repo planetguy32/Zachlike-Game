@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/i1"
-        android:title="item 1"
+    <item
+        android:id="@+id/i1"
         android:orderInCategory="100"
+        android:title="Start"
         app:showAsAction="never" />
-    <item android:id="@+id/i2"
-        android:title="item 2"
+    <item
+        android:id="@+id/i2"
         android:orderInCategory="100"
+        android:title="In"
         app:showAsAction="never" />
-    <item android:id="@+id/i3"
-        android:title="item 3"
+    <item
+        android:id="@+id/i3"
         android:orderInCategory="100"
+        android:title="Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i4"
+        android:orderInCategory="100"
+        android:title="Grab"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i5"
+        android:orderInCategory="100"
+        android:title="Drop"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i6"
+        android:orderInCategory="100"
+        android:title="Bond"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i7"
+        android:orderInCategory="100"
+        android:title="Unbond"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i8"
+        android:orderInCategory="100"
+        android:title="Remove"
         app:showAsAction="never" />
 </menu>

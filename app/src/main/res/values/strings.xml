@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">NotSpaceChem</string>
+    <string name="app_name">Chemplexity</string>
+    <string name="startButton">START</string>
+    <string name="instructions">How to play</string>
+    <string name="textOne">Move your fingers between two arrows to draw an arrow between two buttons</string>
+    <string name="textTwo">Long press a button to place or remove a symbol</string>
+    <string name="titleOne">Chem</string>
+    <string name="titleTwo">plexity</string>
 </resources>

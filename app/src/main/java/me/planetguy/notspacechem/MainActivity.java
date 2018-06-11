@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 String gridID = "grid_" + i + j;
                 int resID = getResources().getIdentifier(gridID, "id", getPackageName());
                 grid[i][j] = findViewById(resID);
+                final int finalI = i;
+                final int finalJ = j;
                 grid[i][j].setOnTouchListener(new View.OnTouchListener() {
                     @Override
                     public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -53,8 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         if(gestureDetector.onTouchEvent(motionEvent)){
                             // Single Tap - cancel out what you have drawn
                             Log.d("CHECK_D", "cancel");
-                            ((Button) view).setText(" ");
-                            showMenu( view);
+                            //((Button) view).setText(" ");
+                            hideNavigationBar();
+                            showMenu(view, ((Button) view));
 
                         } else {
                             if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
@@ -135,23 +138,42 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         public boolean onSingleTapUp(MotionEvent event) {
             return true;
         }
+
+
     }
 
-    public void showMenu(View v)
+    public void showMenu(final View v, final Button b)
     {
-            PopupMenu popup = new PopupMenu(this,v);
+            final PopupMenu popup = new PopupMenu(this,v);
             popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                 @Override
                 public boolean onMenuItemClick(MenuItem item) {
-                    Toast.makeText(MainActivity.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                    if(item.getTitle().equals("Start")){
+                        b.setText("Start");
+                    } else if(item.getTitle().equals("In")){
+                        b.setText("In");
+                    } else if(item.getTitle().equals("Out")){
+                        b.setText("Out");
+                    } else if(item.getTitle().equals("Grab")){
+                        b.setText("Grab");
+                    } else if(item.getTitle().equals("Drop")){
+                        b.setText("Drop");
+                    } else if(item.getTitle().equals("Bond")){
+                        b.setText("Bond");
+                    } else if(item.getTitle().equals("Unbond")){
+                        b.setText("Unbond");
+                    } else if(item.getTitle().equals("Remove")){
+                        b.setText(" ");
+                    }
                     return true;
                 }
             });
+
             MenuInflater inflater = popup.getMenuInflater();
             inflater.inflate(R.menu.button_menu, popup.getMenu());
             hideNavigationBar();
             popup.show();
 
     }
-
 }
