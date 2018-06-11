@@ -20,14 +20,14 @@ import me.planetguy.notspacechem.simulation.stopreason.WrongOutput;
 public class BoardSnapshot {
 
     public Point[] walkerPos;
-    private boolean[] walkerIsCarrying;
+    public boolean[] walkerIsCarrying;
     public Direction[] walkerHeadings;
 
-    private int[] outputsCompleted=new int[2];
+    public int[] outputsCompleted=new int[2];
 
 
-    private HashMap<Point,Atom> atoms=new HashMap<>();
-    private List<Bond> bonds=new ArrayList<>();
+    public HashMap<Point,Atom> atoms=new HashMap<>();
+    public List<Bond> bonds=new ArrayList<>();
 
     private final Board board;
 
@@ -191,7 +191,7 @@ public class BoardSnapshot {
                     if(!walkerIsCarrying[walker])
                         for(int dx=0; dx<4; dx++){
                             for(int dy=0; dy<4; dy++){
-                                DetachedMolecule mol=cutMolecule(base.add(new Point(dx, dy)));
+                                DetachedMolecule mol=cutMolecule(base.add(new Point(dx+6, dy)));
                                 //No output is specified, or no molecule is here
                                 if(board.puzzle.outputs[detail]==null || mol==null)
                                     continue;
@@ -256,5 +256,54 @@ public class BoardSnapshot {
         for(int i=0; i<board.WALKER_COUNT; i++){
             step(i);
         }
+    }
+
+    @Override
+    public String toString(){
+        String result="";
+        String[] colorCodes=new String[]{(char)27+"[31m", (char)27+"[34m"};
+        for(int i=0; i<board.symbols.length; i++){
+            String[] lineParts=new String[]{"", ""};
+            String atomLine = "";
+            String underline="";
+            for(int j=0; j<board.symbols[i].length; j++){
+                for(int k=0; k<board.symbols[i][j].length; k++) {
+                    lineParts[k]+=colorCodes[k];
+                    Symbol s = board.symbols[i][j][k];
+                    if (s == null)
+                        lineParts[k] += " ";
+                    else if (s == Symbol.BOND)
+                        lineParts[k] += "B";
+                    else if (s == Symbol.GRAB)
+                        lineParts[k] += "G";
+                    else if (s == Symbol.DROP)
+                        lineParts[k] += "D";
+                    else if (s == Symbol.IN)
+                        lineParts[k] += "I";
+                    else if (s == Symbol.OUT)
+                        lineParts[k] += "O";
+                    else if (s == Symbol.UNBOND)
+                        lineParts[k] += "U";
+                    Direction arrow = board.arrows[i][j][k];
+                    char[] arrows = new char[]{'v', '>', '^', '<'};
+                    lineParts[k] += (arrow == null) ? ' ' : arrows[arrow.ordinal()];
+                    lineParts[k] += (walkerPos[k].x == i && walkerPos[k].y == j)
+                            ? (walkerIsCarrying[k] ? "*" : "0")
+                            : " ";
+                    lineParts[k] += (char)27+"[0m|";
+                }
+                Atom atom=atoms.get(new Point(i, j));
+                String atomName=atom==null ? "  " : atom.toString();
+                while(atomName.length() < 2)
+                    atomName+=" ";
+                atomLine += atomName +" |";
+                underline += "---+";
+            }
+            for(String s:lineParts)
+                result+=s+"\n";
+            result+=atomLine+"\n";
+            result+=underline+"\n";
+        }
+        return result;
     }
 }
