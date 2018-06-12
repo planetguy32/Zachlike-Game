@@ -3,6 +3,7 @@ package me.planetguy.notspacechem;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
 public class Instructions extends AppCompatActivity {
 
@@ -11,6 +12,8 @@ public class Instructions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.how_to_play);
         hideNavigationBar();
+
+        //Button b = findViewById(R.id.back_btn);
     }
 
     public void onResume() {
@@ -28,5 +31,9 @@ public class Instructions extends AppCompatActivity {
                                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
                                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                 );
+    }
+
+    public void back(View v){
+        finish();
     }
 }
